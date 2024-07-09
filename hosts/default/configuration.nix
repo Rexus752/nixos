@@ -11,11 +11,13 @@
 		gh
 		git
 		git-credential-manager
+		gnome-tweaks
 		libreoffice-qt6-still
 		obsidian
 		prismlauncher
 		spotify
 		telegram-desktop
+		variety
 		whatsapp-for-linux
 		yt-dlp
 	];

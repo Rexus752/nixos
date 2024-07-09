@@ -44,9 +44,13 @@ with lib.hm.gvariant;
 					enable-hot-corners = false;
 					overlay-scrolling = false;
 					clock-show-seconds = true;
+					gtk-enable-primary-paste = false;  # No middle-click paste
 				};
 				"org/gnome/desktop/notifications" = {
 					show-in-lock-screen = true;
+				};
+				"org/gnome/desktop/wm/preferences" = {
+					button-layout = "appmenu:minimize,maximize,close";
 				};
 				"org/gnome/mutter" = {
 					edge-tiling = true;
