@@ -161,6 +161,7 @@ with lib.hm.gvariant;
 				};
 				"org/gnome/nautilus/list-view" = {
 					use-tree-view = true;
+					default-zoom-level = "small";
 				};
 				"org/gnome/nautilus/preferences" = {
 					click-policy = "double";
@@ -192,6 +193,7 @@ with lib.hm.gvariant;
 					"spotify.desktop"
 					"obsidian.desktop"
 					"discord.desktop"
+					"wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"
 					"org.kde.kolourpaint.desktop"
 				];
 				disable-user-extensions = false;

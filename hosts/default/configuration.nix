@@ -8,9 +8,6 @@
 		kdePackages.kolourpaint
 		discord
 		firefox
-		gh
-		git
-		git-credential-manager
 		gnome-tweaks
 		libreoffice-qt6-still
 		obsidian
@@ -20,6 +17,17 @@
 		variety
 		whatsapp-for-linux
 		yt-dlp
+		# Git & GitHub
+			gh
+			git
+			git-credential-manager
+		# Wine
+			wineWowPackages.stable
+			winetricks
+		# Compressed Archives
+			rar
+			zip
+			unzip
 	];
 
 	nixpkgs.config.allowUnfree = true;	
