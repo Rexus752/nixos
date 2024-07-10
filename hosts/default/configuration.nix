@@ -89,6 +89,20 @@
 			"manuel" = import ./home.nix;
 		};
 	};
+	
+	# To see MIME type:
+	# XDG_UTILS_DEBUG_LEVEL=2 xdg-mime query filetype /path/to/file.extension
+	xdg.mime = {
+		enable = true;
+		addedAssociations = {
+			"application/x-wine-extension-gp5" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];  # .gp5
+			"application/pdf" = ["firefox.desktop"];  # .pdf
+		};
+		defaultApplications = {
+			"application/x-wine-extension-gp5" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];  # .gp5
+			"application/pdf" = ["firefox.desktop"];  # .pdf
+		};
+	};
 
 	# This option defines the first version of NixOS you have installed on this particular machine,
 	# and is used to maintain compatibility with application data (e.g. databases) created on older NixOS versions.

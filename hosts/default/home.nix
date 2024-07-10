@@ -29,9 +29,9 @@ with lib.hm.gvariant;
 			};
 		};
 		git = {
-		    enable = true;
-		    userName  = "Rexus752";
-		    userEmail = "t.rexus752@gmail.com";
+			enable = true;
+			userName = "Rexus752";
+			userEmail = "t.rexus752@gmail.com";
 		};
 	};
 
@@ -300,7 +300,7 @@ with lib.hm.gvariant;
 					# Isolate
 						isolate-workspaces = false;
 						isolate-monitors = false;
-						overview-click-to-exit = false;	 # What does this do?
+						overview-click-to-exit = false;  # What does this do?
 						hide-overview-on-startup = false;  # What does this do?
 				# Action
 					click-action = "CYCLE-MIN";
@@ -329,7 +329,7 @@ with lib.hm.gvariant;
 					stockgs-panelbtn-click-only = false;  # What does this do?
 					stockgs-force-hotcorner = false;  # What does this do?
 					# Secondary Menu Options
-						secondarymenu-contains-appmenu = false;	 # What does this do?
+						secondarymenu-contains-appmenu = false;  # What does this do?
 						secondarymenu-contains-showdetails = false;  # What does this do?
 			};
 			
