@@ -25,6 +25,8 @@ with lib.hm.gvariant;
 				rebuild = "sudo nixos-rebuild switch --flake /home/manuel/nixos/#default";
 				editconfig = "sudo nano /home/manuel/nixos/hosts/default/configuration.nix";
 				edithome = "sudo nano /home/manuel/nixos/hosts/default/home.nix && sudo systemctl restart home-manager-manuel.service";
+				genlist = "nix profile history --profile /nix/var/nix/profiles/system";
+				push = "sudo git push -u origin master";
 				screenoff = "dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.SetActive boolean:true";
 			};
 		};
