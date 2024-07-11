@@ -10,12 +10,12 @@
 		firefox
 		gnome-tweaks
 		libreoffice-qt6-still
+		lollypop
 		obsidian
 		prismlauncher
 		spotify
 		telegram-desktop
 		variety
-		whatsapp-for-linux
 		yt-dlp
 		# Git & GitHub
 			gh
@@ -34,7 +34,6 @@
 	environment.gnome.excludePackages = (with pkgs; [
 		gnome-tour
 		gnome-connections
-		totem
 		epiphany
 		geary
 	]);
@@ -96,10 +95,12 @@
 		enable = true;
 		addedAssociations = {
 			"application/x-wine-extension-gp5" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];  # .gp5
+			"audio/mpeg" = ["org.gnome.Lollypop.desktop"];  # .mp3
 			"application/pdf" = ["firefox.desktop"];  # .pdf
 		};
 		defaultApplications = {
 			"application/x-wine-extension-gp5" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];  # .gp5
+			"audio/mpeg" = ["org.gnome.Lollypop.desktop"];  # .mp3
 			"application/pdf" = ["firefox.desktop"];  # .pdf
 		};
 	};

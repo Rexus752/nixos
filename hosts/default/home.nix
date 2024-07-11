@@ -177,6 +177,9 @@ with lib.hm.gvariant;
 				# tab-width = (mkVariant (mkUint32 4));  # Doesn't work
 				wrap-text = true;
 				spellcheck = false;
+				style-scheme = "Adwaita-dark";
+				highlight-current-line = true;
+				show-map = true;
 			};
 			"org/gnome/shell" = {
 				favorite-apps = [
@@ -188,7 +191,6 @@ with lib.hm.gvariant;
 					"org.gnome.Calendar.desktop"
 					"org.gnome.Calculator.desktop"
 					"firefox.desktop"
-					"com.github.eneshecan.WhatsAppForLinux.desktop"
 					"org.telegram.desktop.desktop"
 					"spotify.desktop"
 					"obsidian.desktop"
