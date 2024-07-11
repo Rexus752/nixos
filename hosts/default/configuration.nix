@@ -24,6 +24,9 @@
 		# Wine
 			wineWowPackages.stable
 			winetricks
+		# Backups Management
+			rclone
+			restic
 		# Compressed Archives
 			rar
 			zip
@@ -54,6 +57,20 @@
 	};
 
 	services = {
+		restic.backups = {
+			gdrive = {
+				user = "manuel";
+				repository = "rclone:gdrive:/backups";
+				initialize = true;
+				passwordFile = "/home/manuel/nixos/password.txt";
+				paths = [
+					"/home/manuel/Manuel"
+				];
+				timerConfig = {
+					onCalendar = "daily";
+				};
+			};
+		};
 		xserver = {
 			enable = true;
 			displayManager.gdm.enable = true;
