@@ -11,7 +11,6 @@
 		gnome-tweaks
 		libreoffice-qt6-still
 		lollypop
-		obsidian
 		prismlauncher
 		spotify
 		telegram-desktop
@@ -21,6 +20,10 @@
 			gh
 			git
 			git-credential-manager
+		# Obsidian & Quartz
+			nodejs
+			nodePackages.npm
+			obsidian
 		# Wine
 			wineWowPackages.stable
 			winetricks
@@ -67,7 +70,7 @@
 					"/home/manuel/Manuel"
 				];
 				timerConfig = {
-					onCalendar = "daily";
+					onCalendar = "weekly";
 				};
 			};
 		};
@@ -111,11 +114,13 @@
 	xdg.mime = {
 		enable = true;
 		addedAssociations = {
+			"application/x-gnuplot" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];  # .gp
 			"application/x-wine-extension-gp5" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];  # .gp5
 			"audio/mpeg" = ["org.gnome.Lollypop.desktop"];  # .mp3
 			"application/pdf" = ["firefox.desktop"];  # .pdf
 		};
 		defaultApplications = {
+			"application/x-gnuplot" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];  # .gp
 			"application/x-wine-extension-gp5" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];  # .gp5
 			"audio/mpeg" = ["org.gnome.Lollypop.desktop"];  # .mp3
 			"application/pdf" = ["firefox.desktop"];  # .pdf
