@@ -7,6 +7,7 @@
 		gnomeExtensions.dash-to-panel
 		kdePackages.kolourpaint
 		discord
+		dupeguru
 		firefox
 		gnome-tweaks
 		libreoffice-qt6-still

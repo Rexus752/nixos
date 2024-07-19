@@ -21,6 +21,7 @@ with lib.hm.gvariant;
 	programs = {
 		bash = {
 			enable = true;
+			# Restart your shell when changes are applied!
 			shellAliases = {
 				rebuild = "sudo nixos-rebuild switch --flake /home/manuel/nixos/#default";
 				editconfig = "sudo nano /home/manuel/nixos/hosts/default/configuration.nix";
@@ -30,6 +31,10 @@ with lib.hm.gvariant;
 				push = "sudo git push -u origin master";
 				screenoff = "dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.SetActive boolean:true";
 			};
+			# For aliases with arguments, use programs.bash.bashrcExtra
+			bashrcExtra = ''
+				ytdl() { yt-dlp -x "$1" --audio-format mp3 --output "/home/manuel/Desktop/download"; }
+			'';
 		};
 		git = {
 			enable = true;
@@ -337,7 +342,6 @@ with lib.hm.gvariant;
 						secondarymenu-contains-appmenu = false;  # What does this do?
 						secondarymenu-contains-showdetails = false;  # What does this do?
 			};
-			
 		};
 	};
 
