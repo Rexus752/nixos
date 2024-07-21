@@ -23,13 +23,14 @@ with lib.hm.gvariant;
 			enable = true;
 			# Restart your shell when changes are applied!
 			shellAliases = {
-				rebuild = "sudo nixos-rebuild switch --flake /home/manuel/nixos/#default";
-				editconfig = "sudo nano /home/manuel/nixos/hosts/default/configuration.nix";
-				edithome = "sudo nano /home/manuel/nixos/hosts/default/home.nix";
-				genlist = "nix profile history --profile /nix/var/nix/profiles/system";
-				homerestart = "sudo systemctl restart home-manager-manuel.service";
 				push = "sudo git push -u origin master";
+				quartzsync = ''cd "/home/manuel/Manuel/Obsidian/Giardino Digitale" && sudo npx quartz sync --no-pull && sudo chown manuel "/home/manuel/Manuel/Obsidian/Giardino Digitale/content" -R'';
 				screenoff = "dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.SetActive boolean:true";
+				# Nix
+					rebuild = "sudo nixos-rebuild switch --flake /home/manuel/nixos/#default && sudo systemctl restart home-manager-manuel.service";
+					editconfig = "sudo nano /home/manuel/nixos/hosts/default/configuration.nix";
+					edithome = "sudo nano /home/manuel/nixos/hosts/default/home.nix";
+					genlist = "nix profile history --profile /nix/var/nix/profiles/system";
 			};
 			# For aliases with arguments, use programs.bash.bashrcExtra
 			bashrcExtra = ''
