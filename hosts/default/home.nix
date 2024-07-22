@@ -24,8 +24,10 @@ with lib.hm.gvariant;
 			# Restart your shell when changes are applied!
 			shellAliases = {
 				push = "sudo git push -u origin master";
-				quartzsync = ''cd "/home/manuel/Manuel/Obsidian/Giardino Digitale" && sudo npx quartz sync --no-pull && sudo chown manuel "/home/manuel/Manuel/Obsidian/Giardino Digitale/content" -R'';
 				screenoff = "dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.SetActive boolean:true";
+				# Obsidian Quartz
+					quartzsync = ''cd "/home/manuel/Manuel/Obsidian/Giardino Digitale" && sudo npx quartz sync --no-pull && sudo chown manuel "/home/manuel/Manuel/Obsidian/Giardino Digitale/content" -R'';
+					quartzlocal = ''cd "/home/manuel/Manuel/Obsidian/Giardino Digitale" && npx quartz build --serve'';
 				# Nix
 					rebuild = "sudo nixos-rebuild switch --flake /home/manuel/nixos/#default && sudo systemctl restart home-manager-manuel.service";
 					editconfig = "sudo nano /home/manuel/nixos/hosts/default/configuration.nix";
