@@ -5,13 +5,13 @@
 	environment.systemPackages = with pkgs; [
 		gnomeExtensions.clipboard-history
 		gnomeExtensions.dash-to-panel
-		kdePackages.kolourpaint
 		discord
 		dupeguru
 		firefox
 		gnome-tweaks
 		libreoffice-qt6-still
 		lollypop
+		pinta
 		prismlauncher
 		spotify
 		telegram-desktop

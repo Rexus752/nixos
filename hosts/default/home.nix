@@ -207,7 +207,6 @@ with lib.hm.gvariant;
 					"obsidian.desktop"
 					"discord.desktop"
 					"wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"
-					"org.kde.kolourpaint.desktop"
 				];
 				disable-user-extensions = false;
 				enabled-extensions = [
@@ -316,7 +315,7 @@ with lib.hm.gvariant;
 						overview-click-to-exit = false;  # What does this do?
 						hide-overview-on-startup = false;  # What does this do?
 				# Action
-					click-action = "CYCLE-MIN";
+					click-action = "CYCLE";
 					# Shift & Middle-click Behavior
 						shift-click-action = "LAUNCH";
 						middle-click-action = "QUIT";
