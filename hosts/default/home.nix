@@ -36,7 +36,7 @@ with lib.hm.gvariant;
 			};
 			# For aliases with arguments, use programs.bash.bashrcExtra
 			bashrcExtra = ''
-				ytdl() { yt-dlp -x "$1" --audio-format mp3 --output "/home/manuel/Desktop/download"; }
+				ytdl() { yt-dlp -x "$1" --audio-format mp3 -P "/home/manuel/Desktop"; }
 			'';
 		};
 		git = {

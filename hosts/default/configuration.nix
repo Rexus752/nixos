@@ -11,6 +11,7 @@
 		gnome-tweaks
 		libreoffice-qt6-still
 		lollypop
+		nvd
 		pinta
 		prismlauncher
 		spotify
@@ -71,7 +72,8 @@
 					"/home/manuel/Manuel"
 				];
 				timerConfig = {
-					onCalendar = "weekly";
+					OnCalendar = "daily";
+					Persistent = true;
 				};
 			};
 		};
