@@ -7,6 +7,7 @@
 		gnomeExtensions.dash-to-panel
 		discord
 		dupeguru
+		eartag
 		firefox
 		gnome-tweaks
 		libreoffice-qt6-still
@@ -38,7 +39,8 @@
 			unzip
 	];
 
-	nixpkgs.config.allowUnfree = true;	
+	nixpkgs.config.allowUnfree = true;
+	
 	environment.gnome.excludePackages = (with pkgs; [
 		gnome-tour
 		gnome-connections
@@ -112,21 +114,29 @@
 		};
 	};
 	
+	# Temporary workaround for this problem: https://discourse.nixos.org/t/what-gstreamer-plugin-am-i-missing-thats-preventing-me-from-seeing-audio-video-properties/32824
+	environment.sessionVariables.GST_PLUGIN_SYSTEM_PATH_1_0 = lib.makeSearchPathOutput "lib" "lib/gstreamer-1.0" (with pkgs.gst_all_1; [
+		gst-plugins-good
+		gst-plugins-bad
+		gst-plugins-ugly
+		gst-libav
+	]);
+	
 	# To see MIME type:
 	# XDG_UTILS_DEBUG_LEVEL=2 xdg-mime query filetype /path/to/file.extension
 	xdg.mime = {
 		enable = true;
 		addedAssociations = {
-			"application/x-gnuplot" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];  # .gp
-			"application/x-wine-extension-gp5" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];  # .gp5
-			"audio/mpeg" = ["org.gnome.Lollypop.desktop"];  # .mp3
-			"application/pdf" = ["firefox.desktop"];  # .pdf
+			/* .gp */ "application/x-gnuplot" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];
+			/* .gp5 */ "application/x-wine-extension-gp5" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];
+			/* .mp3 */ "audio/mpeg" = ["org.gnome.Lollypop.desktop"];
+			/* .pdf */ "application/pdf" = ["firefox.desktop"];
 		};
 		defaultApplications = {
-			"application/x-gnuplot" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];  # .gp
-			"application/x-wine-extension-gp5" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];  # .gp5
-			"audio/mpeg" = ["org.gnome.Lollypop.desktop"];  # .mp3
-			"application/pdf" = ["firefox.desktop"];  # .pdf
+			/* .gp */ "application/x-gnuplot" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];
+			/* .gp5 */ "application/x-wine-extension-gp5" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];
+			/* .mp3 */ "audio/mpeg" = ["org.gnome.Lollypop.desktop"];
+			/* .pdf */ "application/pdf" = ["firefox.desktop"];
 		};
 	};
 
