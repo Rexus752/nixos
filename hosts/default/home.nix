@@ -17,6 +17,25 @@ with lib.hm.gvariant;
 		# release notes.
 		stateVersion = "24.05"; # Please read the comment before changing.
 	};
+	
+	xdg.desktopEntries = {
+	 	obsidianPersonalVault = {
+			name = "Obsidian - Vault Personale";
+			exec = "obsidian obsidian://vault/VaultPersonale";
+			icon = "/home/manuel/Manuel/Obsidian/VaultPersonale/icon.png";
+			terminal = false;
+			categories = [ "Application" ];
+			mimeType = [ "x-scheme-handler/obsidian" ];
+		};
+	 	obsidianDigitalGarden = {
+			name = "Obsidian - Giardino Digitale";
+			exec = "obsidian obsidian://vault/GiardinoDigitale";
+			icon = "/home/manuel/Manuel/Obsidian/GiardinoDigitale/icon.png";
+			terminal = false;
+			categories = [ "Application" ];
+			mimeType = [ "x-scheme-handler/obsidian" ];
+		};
+	};
 
 	programs = {
 		bash = {
@@ -205,6 +224,8 @@ with lib.hm.gvariant;
 					"org.telegram.desktop.desktop"
 					"spotify.desktop"
 					"obsidian.desktop"
+					"obsidianPersonalVault.desktop"
+					"obsidianDigitalGarden.desktop"
 					"discord.desktop"
 					"wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"
 				];

@@ -3,26 +3,28 @@
 {
 
 	environment.systemPackages = with pkgs; [
-		gnomeExtensions.clipboard-history
-		gnomeExtensions.dash-to-panel
 		discord
 		dupeguru
 		eartag
 		firefox
-		gnome-tweaks
 		libreoffice-qt6-still
 		lollypop
-		nvd
+		nvd # Nix/NixOS package version diff tool
 		pinta
 		prismlauncher
 		spotify
 		telegram-desktop
-		variety
 		yt-dlp
 		# Git & GitHub
 			gh
 			git
 			git-credential-manager
+		# GNOME Stuff
+			gnomeExtensions.clipboard-history
+			gnomeExtensions.dash-to-panel
+			desktop-file-utils
+			gnome-tweaks
+			variety
 		# Obsidian & Quartz
 			nodejs
 			nodePackages.npm
@@ -73,10 +75,15 @@
 				paths = [
 					"/home/manuel/Manuel"
 				];
+				exclude = [
+					"/home/*/.cache"
+				];
 				timerConfig = {
-					OnCalendar = "daily";
+					OnCalendar = "00:05";
 					Persistent = true;
+					RandomizedDelaySec = "5h";
 				};
+				pruneOpts = [ "--keep-last 5" ];
 			};
 		};
 		xserver = {
