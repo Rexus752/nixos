@@ -21,18 +21,18 @@ with lib.hm.gvariant;
 	xdg.desktopEntries = {
 	 	obsidianPersonalVault = {
 			name = "Obsidian - Vault Personale";
+			type = "Application";
 			exec = "obsidian obsidian://vault/VaultPersonale";
 			icon = "/home/manuel/Manuel/Obsidian/VaultPersonale/icon.png";
 			terminal = false;
-			categories = [ "Application" ];
 			mimeType = [ "x-scheme-handler/obsidian" ];
 		};
 	 	obsidianDigitalGarden = {
 			name = "Obsidian - Giardino Digitale";
+			type = "Application";
 			exec = "obsidian obsidian://vault/GiardinoDigitale";
 			icon = "/home/manuel/Manuel/Obsidian/GiardinoDigitale/icon.png";
 			terminal = false;
-			categories = [ "Application" ];
 			mimeType = [ "x-scheme-handler/obsidian" ];
 		};
 	};
@@ -222,11 +222,11 @@ with lib.hm.gvariant;
 					"org.gnome.Calculator.desktop"
 					"firefox.desktop"
 					"org.telegram.desktop.desktop"
-					"spotify.desktop"
+					"youtube-music.desktop"
+					"discord.desktop"
 					"obsidian.desktop"
 					"obsidianPersonalVault.desktop"
 					"obsidianDigitalGarden.desktop"
-					"discord.desktop"
 					"wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"
 				];
 				disable-user-extensions = false;

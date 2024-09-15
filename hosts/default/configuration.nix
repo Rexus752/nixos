@@ -14,6 +14,7 @@
 		prismlauncher
 		spotify
 		telegram-desktop
+		youtube-music
 		yt-dlp
 		# Git & GitHub
 			gh
