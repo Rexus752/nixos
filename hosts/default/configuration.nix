@@ -9,11 +9,13 @@
 		firefox
 		libreoffice-qt6-still
 		lollypop
+		mupdf
 		nvd # Nix/NixOS package version diff tool
 		pinta
 		prismlauncher
 		spotify
 		telegram-desktop
+		vscode-fhs
 		youtube-music
 		yt-dlp
 		# Git & GitHub
@@ -23,9 +25,19 @@
 		# GNOME Stuff
 			gnomeExtensions.clipboard-history
 			gnomeExtensions.dash-to-panel
+			gnomeExtensions.steal-my-focus-window
 			desktop-file-utils
 			gnome-tweaks
 			variety
+		# .NET
+			docker
+			dotnetCorePackages.dotnet_8.sdk
+			dotnetCorePackages.dotnet_8.runtime
+			dotnetCorePackages.dotnet_8.aspnetcore
+			dotnetCorePackages.dotnet_8.vmr
+			dotnet-aspnetcore_8
+			# dotnet-ef
+			sqlcmd
 		# Obsidian & Quartz
 			nodejs
 			nodePackages.npm
@@ -43,6 +55,8 @@
 	];
 
 	nixpkgs.config.allowUnfree = true;
+	
+	virtualisation.docker.enable = true;
 	
 	environment.gnome.excludePackages = (with pkgs; [
 		gnome-tour

@@ -31,7 +31,7 @@ with lib.hm.gvariant;
 			name = "Obsidian - Giardino Digitale";
 			type = "Application";
 			exec = "obsidian obsidian://vault/GiardinoDigitale";
-			icon = "/home/manuel/Manuel/Obsidian/GiardinoDigitale/icon.png";
+			icon = "/home/manuel/Manuel/Obsidian/GiardinoDigitale/quartz/static/icon.png";
 			terminal = false;
 			mimeType = [ "x-scheme-handler/obsidian" ];
 		};
@@ -45,8 +45,8 @@ with lib.hm.gvariant;
 				push = "sudo git push -u origin master";
 				screenoff = "dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.SetActive boolean:true";
 				# Obsidian Quartz
-					quartzsync = ''cd "/home/manuel/Manuel/Obsidian/Giardino Digitale" && sudo npx quartz sync --no-pull && sudo chown manuel "/home/manuel/Manuel/Obsidian/Giardino Digitale/content" -R'';
-					quartzlocal = ''cd "/home/manuel/Manuel/Obsidian/Giardino Digitale" && npx quartz build --serve'';
+					quartzsync = ''cd "/home/manuel/Manuel/Obsidian/GiardinoDigitale" && sudo npx quartz sync --no-pull && sudo chown manuel "/home/manuel/Manuel/Obsidian/Giardino Digitale/content" -R'';
+					quartzlocal = ''cd "/home/manuel/Manuel/Obsidian/GiardinoDigitale" && npx quartz build --serve'';
 				# Nix
 					rebuild = "sudo nixos-rebuild switch --flake /home/manuel/nixos/#default && sudo systemctl restart home-manager-manuel.service";
 					editconfig = "sudo nano /home/manuel/nixos/hosts/default/configuration.nix";
@@ -236,6 +236,8 @@ with lib.hm.gvariant;
 					"places-menu@gnome-shell-extensions.gcampax.github.com"
 					"drive-menu@gnome-shell-extensions.gcampax.github.com"
 					"clipboard-history@alexsaveau.dev"
+					"screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com"
+					"steal-my-focus-window@steal-my-focus-window"
 				];
 			};
 			"org/gnome/shell/extensions/clipboard-history" = {
