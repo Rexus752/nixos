@@ -241,12 +241,11 @@ with lib.hm.gvariant;
 				];
 				disable-user-extensions = false;
 				enabled-extensions = [
-					"dash-to-panel@jderose9.github.com"
 					"apps-menu@gnome-shell-extensions.gcampax.github.com"
+					"clipboard-history@alexsaveau.dev"
+					"dash-to-panel@jderose9.github.com"
 					"places-menu@gnome-shell-extensions.gcampax.github.com"
 					"drive-menu@gnome-shell-extensions.gcampax.github.com"
-					"clipboard-history@alexsaveau.dev"
-					"screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com"
 					"steal-my-focus-window@steal-my-focus-window"
 				];
 			};
