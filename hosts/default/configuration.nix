@@ -27,9 +27,10 @@
 			gnomeExtensions.dash-to-panel
 			gnomeExtensions.notification-timeout
 			gnomeExtensions.steal-my-focus-window
+			gnomeExtensions.wallpaper-slideshow
 			desktop-file-utils
 			gnome-tweaks
-			variety
+			# variety
 		# .NET
 			docker
 			dotnetCorePackages.dotnet_8.sdk

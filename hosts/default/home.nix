@@ -89,6 +89,9 @@ with lib.hm.gvariant;
 				"org/gnome/desktop/notifications" = {
 					show-in-lock-screen = true;
 				};
+				"org/gnome/desktop/background" = {
+					picture-options = "zoom";
+				};
 				"org/gnome/desktop/wm/preferences" = {
 					button-layout = "appmenu:minimize,maximize,close";
 				};
@@ -248,6 +251,7 @@ with lib.hm.gvariant;
 					"places-menu@gnome-shell-extensions.gcampax.github.com"
 					"drive-menu@gnome-shell-extensions.gcampax.github.com"
 					"steal-my-focus-window@steal-my-focus-window"
+					"azwallpaper@azwallpaper.gitlab.com"
 				];
 			};
 			"org/gnome/shell/extensions/clipboard-history" = {
@@ -381,6 +385,11 @@ with lib.hm.gvariant;
 				ignore-idle = true;
 				always-normal = true;
 				timeout = (mkVariant (mkUint32 3000));
+			};
+			"org/gnome/shell/extensions/azwallpaper" = {
+				slideshow-directory = "/home/manuel/Manuel/Immagini/Sfondi del Desktop";
+				slideshow-slide-duration = "(0, 1, 0)";
+				slideshow-use-absolute-time-for-duration = false;
 			};
 		};
 	};
