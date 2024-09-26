@@ -42,6 +42,7 @@ with lib.hm.gvariant;
 			enable = true;
 			# Restart your shell when changes are applied!
 			shellAliases = {
+				gnomerestart = "pkill -HUP gnome-shell";
 				push = "sudo git push -u origin master";
 				screenoff = "dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.SetActive boolean:true";
 				# Obsidian Quartz
