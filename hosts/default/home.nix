@@ -47,17 +47,17 @@ with lib.hm.gvariant;
 				# Obsidian Quartz
 					quartzsync = ''
 						cd "/home/manuel/Manuel/Obsidian/GiardinoDigitale"
-						&& sudo npx quartz sync --no-pull
-						&& sudo chown manuel "/home/manuel/Manuel/Obsidian/GiardinoDigitale/content" -R
+						sudo npx quartz sync --no-pull
+						sudo chown manuel "/home/manuel/Manuel/Obsidian/GiardinoDigitale/content" -R
 					'';
 					quartzlocal = ''
 						cd "/home/manuel/Manuel/Obsidian/GiardinoDigitale"
-						&& npx quartz build --serve
+						npx quartz build --serve
 					'';
 				# Nix
 					rebuild = "
 						sudo nixos-rebuild switch --flake /home/manuel/nixos/#default
-						&& sudo systemctl restart home-manager-manuel.service
+						sudo systemctl restart home-manager-manuel.service
 					";
 					editconfig = "sudo nano /home/manuel/nixos/hosts/default/configuration.nix";
 					edithome = "sudo nano /home/manuel/nixos/hosts/default/home.nix";
@@ -244,6 +244,7 @@ with lib.hm.gvariant;
 					"apps-menu@gnome-shell-extensions.gcampax.github.com"
 					"clipboard-history@alexsaveau.dev"
 					"dash-to-panel@jderose9.github.com"
+					"notification-timeout@chlumskyvaclav.gmail.com"
 					"places-menu@gnome-shell-extensions.gcampax.github.com"
 					"drive-menu@gnome-shell-extensions.gcampax.github.com"
 					"steal-my-focus-window@steal-my-focus-window"
@@ -375,6 +376,11 @@ with lib.hm.gvariant;
 					# Secondary Menu Options
 						secondarymenu-contains-appmenu = false;  # What does this do?
 						secondarymenu-contains-showdetails = false;  # What does this do?
+			};
+			"org/gnome/shell/extensions/notification-timeout" = {
+				ignore-idle = true;
+				always-normal = true;
+				timeout = (mkVariant (mkUint32 3000));
 			};
 		};
 	};

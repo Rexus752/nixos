@@ -25,6 +25,7 @@
 		# GNOME Stuff
 			gnomeExtensions.clipboard-history
 			gnomeExtensions.dash-to-panel
+			gnomeExtensions.notification-timeout
 			gnomeExtensions.steal-my-focus-window
 			desktop-file-utils
 			gnome-tweaks
