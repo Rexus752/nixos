@@ -30,7 +30,6 @@
 			gnomeExtensions.wallpaper-slideshow
 			desktop-file-utils
 			gnome-tweaks
-			# variety
 		# .NET
 			docker
 			dotnetCorePackages.dotnet_8.sdk
