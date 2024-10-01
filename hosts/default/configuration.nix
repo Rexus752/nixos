@@ -44,7 +44,7 @@
 			nodePackages.npm
 			obsidian
 		# Wine
-			wineWowPackages.stable
+			wine
 			winetricks
 		# Backups Management
 			rclone
