@@ -238,6 +238,7 @@ with lib.hm.gvariant;
 					"org.telegram.desktop.desktop"
 					"spotify.desktop"
 					"discord.desktop"
+					"code.desktop"
 					"obsidian.desktop"
 					"obsidianPersonalVault.desktop"
 					"obsidianDigitalGarden.desktop"
