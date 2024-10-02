@@ -16,7 +16,6 @@
 		spotify
 		telegram-desktop
 		vscode-fhs
-		youtube-music
 		yt-dlp
 		# Git & GitHub
 			gh

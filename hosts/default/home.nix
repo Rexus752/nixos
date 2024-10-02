@@ -236,7 +236,7 @@ with lib.hm.gvariant;
 					"org.gnome.Calculator.desktop"
 					"firefox.desktop"
 					"org.telegram.desktop.desktop"
-					"youtube-music.desktop"
+					"spotify.desktop"
 					"discord.desktop"
 					"obsidian.desktop"
 					"obsidianPersonalVault.desktop"
