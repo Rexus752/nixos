@@ -150,6 +150,13 @@ with lib.hm.gvariant;
 					]))
 				];
 			};
+			"org/gnome/Console" = {
+				font-scale = 1.0;
+				theme = "auto";
+				use-system-font = true;
+				audible-bell = true;
+				visual-bell = true;
+			};
 			# Weather
 				"org/gnome/shell/weather" = {
 					locations = [
