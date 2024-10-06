@@ -86,7 +86,7 @@
 				user = "manuel";
 				repository = "rclone:gdrive:/backups";
 				initialize = true;
-				passwordFile = "/home/manuel/nixos/password.txt";
+				passwordFile = "/home/manuel/nixos/restic_password.txt";
 				paths = [
 					"/home/manuel/Manuel"
 				];
