@@ -45,6 +45,7 @@ with lib.hm.gvariant;
 				gnomerestart = "pkill -HUP gnome-shell";
 				push = "sudo git push -u origin master";
 				screenoff = "dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.SetActive boolean:true";
+				snapshotslist = "restic -r rclone:gdrive:/backups snapshots";
 				# Obsidian Quartz
 					quartzsync = ''
 						cd "/home/manuel/Manuel/Obsidian/GiardinoDigitale"
