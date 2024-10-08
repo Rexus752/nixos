@@ -15,6 +15,7 @@
 		prismlauncher
 		spotify
 		telegram-desktop
+		vlc
 		vscode-fhs
 		yt-dlp
 		# Git & GitHub
@@ -61,8 +62,8 @@
 	environment.gnome.excludePackages = (with pkgs; [
 		gnome-tour
 		gnome-connections
-		epiphany
-		geary
+		epiphany # Browser
+		geary # E-Mail
 	]);
 	
 	imports = [
