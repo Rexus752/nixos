@@ -7,6 +7,7 @@
 		dupeguru
 		eartag
 		firefox
+		htop
 		libreoffice-qt6-still
 		lollypop
 		mupdf
@@ -18,11 +19,14 @@
 		vlc
 		vscode-fhs
 		yt-dlp
+		# Programming languages
+			gcc
+			python3
 		# Git & GitHub
 			gh
 			git
 			git-credential-manager
-		# GNOME Stuff
+		# GNOME stuff
 			gnomeExtensions.clipboard-history
 			gnomeExtensions.dash-to-panel
 			gnomeExtensions.notification-timeout
@@ -62,6 +66,7 @@
 	environment.gnome.excludePackages = (with pkgs; [
 		gnome-tour
 		gnome-connections
+		totem # Videos
 		epiphany # Browser
 		geary # E-Mail
 	]);
