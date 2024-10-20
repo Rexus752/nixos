@@ -108,6 +108,12 @@ with lib.hm.gvariant;
 				"org/gnome/shell/keybindings" = {
 					show-screenshot-ui = [''<Shift><Super>s''];  # Shift+Win+S
 				};
+				"org/gnome/desktop/wm/keybindings" = {
+					switch-applications = [];
+					switch-applications-backward = [];
+					switch-windows = [''<Alt>Tab''];
+					switch-windows-backward = [''<Shift><Alt>Tab''];
+				};
 				"org/gnome/desktop/a11y/interface" = {
 					show-status-shapes = true;
 				};
