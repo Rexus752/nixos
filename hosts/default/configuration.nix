@@ -21,6 +21,7 @@
 		yt-dlp
 		# Programming languages
 			gcc
+			gnumake
 			python3
 		# Git & GitHub
 			gh
