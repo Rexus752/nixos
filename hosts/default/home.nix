@@ -43,6 +43,7 @@ with lib.hm.gvariant;
 			# Restart your shell when changes are applied!
 			shellAliases = {
 				gnomerestart = "pkill -HUP gnome-shell";
+				pushall = ''for remote in $(git remote); do git push "$remote" --all; done'';
 				screenoff = "dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.SetActive boolean:true";
 				snapshotslist = "restic -r rclone:gdrive:/backups snapshots";
 				# Obsidian Quartz
