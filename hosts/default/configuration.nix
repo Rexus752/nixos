@@ -10,6 +10,7 @@
 		htop
 		libreoffice-qt6-still
 		lollypop
+		morgen
 		mupdf
 		nvd # Nix/NixOS package version diff tool
 		pinta
@@ -65,11 +66,12 @@
 	virtualisation.docker.enable = true;
 	
 	environment.gnome.excludePackages = (with pkgs; [
-		gnome-tour
-		gnome-connections
-		totem # Videos
 		epiphany # Browser
 		geary # E-Mail
+		gnome-calendar
+		gnome-connections
+		gnome-tour
+		totem # Videos
 	]);
 	
 	imports = [

@@ -236,7 +236,7 @@ with lib.hm.gvariant;
 					"org.gnome.Console.desktop"
 					"org.gnome.Nautilus.desktop"
 					"org.gnome.TextEditor.desktop"
-					"org.gnome.Calendar.desktop"
+					"morgen.desktop"
 					"org.gnome.Calculator.desktop"
 					"firefox.desktop"
 					"org.telegram.desktop.desktop"
