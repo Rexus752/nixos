@@ -3,9 +3,11 @@
 {
 
 	environment.systemPackages = with pkgs; [
+		audacity
 		discord
 		dupeguru
 		eartag
+		file
 		firefox
 		htop
 		libreoffice-qt6-still
