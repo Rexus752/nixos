@@ -24,6 +24,7 @@
 		yt-dlp
 		# Programming languages
 			gcc
+			gdb
 			gnumake
 			python3
 		# Git & GitHub
@@ -52,6 +53,7 @@
 			nodePackages.npm
 			obsidian
 		# Wine
+			bottles
 			wineWowPackages.stable
 			winetricks
 		# Backups Management
@@ -160,18 +162,23 @@
 	xdg.mime = {
 		enable = true;
 		addedAssociations = {
+			/* .code-workspace */ "application/json" = ["code.desktop"];
 			/* .gp */ "application/x-gnuplot" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];
 			/* .gp5 */ "application/x-wine-extension-gp5" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];
 			/* .mp3 */ "audio/mpeg" = ["org.gnome.Lollypop.desktop"];
 			/* .pdf */ "application/pdf" = ["firefox.desktop"];
 		};
 		defaultApplications = {
+			/* .code-workspace */ "application/json" = ["code.desktop"];
 			/* .gp */ "application/x-gnuplot" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];
 			/* .gp5 */ "application/x-wine-extension-gp5" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];
 			/* .mp3 */ "audio/mpeg" = ["org.gnome.Lollypop.desktop"];
 			/* .pdf */ "application/pdf" = ["firefox.desktop"];
 		};
 	};
+
+	# This should prevent the USB port from automatically suspending
+	boot.kernelParams = [ "usbcore.autosuspend=-1" ];
 
 	# This option defines the first version of NixOS you have installed on this particular machine,
 	# and is used to maintain compatibility with application data (e.g. databases) created on older NixOS versions.
