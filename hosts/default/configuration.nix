@@ -41,15 +41,6 @@
 			gnomeExtensions.wallpaper-slideshow
 			desktop-file-utils
 			gnome-tweaks
-		# .NET
-			docker
-			dotnetCorePackages.dotnet_8.sdk
-			dotnetCorePackages.dotnet_8.runtime
-			dotnetCorePackages.dotnet_8.aspnetcore
-			dotnetCorePackages.dotnet_8.vmr
-			dotnet-aspnetcore_8
-			# dotnet-ef
-			sqlcmd
 		# Obsidian & Quartz
 			nodejs
 			nodePackages.npm
