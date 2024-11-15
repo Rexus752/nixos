@@ -9,11 +9,13 @@
 		eartag
 		file
 		firefox
+		freecad
 		htop
 		libreoffice-qt6-still
 		lollypop
 		morgen
 		mupdf
+		nicotine-plus
 		nvd # Nix/NixOS package version diff tool
 		pinta
 		prismlauncher
@@ -54,6 +56,7 @@
 			obsidian
 		# Wine
 			bottles
+			mono
 			wineWowPackages.stable
 			winetricks
 		# Backups Management
