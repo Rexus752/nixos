@@ -16,6 +16,7 @@
 		morgen
 		mupdf
 		nicotine-plus
+		nodejs_22
 		nvd # Nix/NixOS package version diff tool
 		pinta
 		prismlauncher
