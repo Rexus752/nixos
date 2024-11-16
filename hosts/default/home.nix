@@ -42,11 +42,9 @@ with lib.hm.gvariant;
 			enable = true;
 			# Restart your shell when changes are applied!
 			shellAliases = {
-				backupnow = ''restic -r rclone:gdrive:/backups backup "/home/manuel/Manuel"'';
 				gnomerestart = "pkill -HUP gnome-shell";
 				pushall = ''for remote in $(git remote); do git push "$remote" --all; done'';
 				screenoff = "dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.SetActive boolean:true";
-				snapshotslist = "restic -r rclone:gdrive:/backups snapshots";
 				# Obsidian Quartz
 					quartzsync = ''cd "/home/manuel/Manuel/Obsidian/GiardinoDigitale" && npx quartz sync'';
 					quartzlocal = ''cd "/home/manuel/Manuel/Obsidian/GiardinoDigitale" && npx quartz build --serve'';
@@ -55,10 +53,14 @@ with lib.hm.gvariant;
 					editconfig = "sudo nano /home/manuel/nixos/hosts/default/configuration.nix";
 					edithome = "sudo nano /home/manuel/nixos/hosts/default/home.nix";
 					genlist = "nix profile history --profile /nix/var/nix/profiles/system";
+				# Restic
+					backupnow = ''restic -r rclone:gdrive:/backups backup "/home/manuel/Manuel"'';
+					snapshotslist = "restic -r rclone:gdrive:/backups snapshots";
 			};
 			# For aliases with arguments, use programs.bash.bashrcExtra
 			bashrcExtra = ''
 				ytdl() { yt-dlp -x "$1" --audio-format mp3 -P "/home/manuel/Desktop" --embed-metadata --add-metadata --embed-thumbnail; }
+				restore() { restic -r rclone:gdrive:/backups restore latest --target Manuel/restored --include "$1" && echo "Restored file in ~/Manuel/restored"; }
 			'';
 		};
 		git = {
