@@ -5,6 +5,7 @@
 	environment.systemPackages = with pkgs; [
 		audacity
 		discord
+		droidcam
 		dupeguru
 		eartag
 		file
@@ -18,6 +19,7 @@
 		nicotine-plus
 		nodejs_22
 		nvd # Nix/NixOS package version diff tool
+		obs-studio
 		pinta
 		prismlauncher
 		spotify
