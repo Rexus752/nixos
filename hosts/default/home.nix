@@ -19,7 +19,7 @@ with lib.hm.gvariant;
 	};
 	
 	xdg.desktopEntries = {
-	 	obsidianPersonalVault = {
+		obsidianPersonalVault = {
 			name = "Obsidian - Vault Personale";
 			type = "Application";
 			exec = "obsidian obsidian://vault/VaultPersonale";
@@ -27,11 +27,19 @@ with lib.hm.gvariant;
 			terminal = false;
 			mimeType = [ "x-scheme-handler/obsidian" ];
 		};
-	 	obsidianDigitalGarden = {
+		obsidianDigitalGarden = {
 			name = "Obsidian - Giardino Digitale";
 			type = "Application";
 			exec = "obsidian obsidian://vault/GiardinoDigitale";
 			icon = "/home/manuel/Manuel/Obsidian/GiardinoDigitale/quartz/static/icon.png";
+			terminal = false;
+			mimeType = [ "x-scheme-handler/obsidian" ];
+		};
+		obsidianTempVault = {
+			name = "Obsidian - Temp Vault";
+			type = "Application";
+			exec = "obsidian obsidian://vault/TempVault";
+			icon = "/home/manuel/Manuel/Obsidian/TempVault/icon.png";
 			terminal = false;
 			mimeType = [ "x-scheme-handler/obsidian" ];
 		};
@@ -247,6 +255,7 @@ with lib.hm.gvariant;
 					"discord.desktop"
 					"code.desktop"
 					"obsidian.desktop"
+					"obsidianTempVault.desktop"
 					"obsidianPersonalVault.desktop"
 					"obsidianDigitalGarden.desktop"
 					"wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"
