@@ -42,6 +42,7 @@
 			gnomeExtensions.notification-timeout
 			gnomeExtensions.steal-my-focus-window
 			gnomeExtensions.wallpaper-slideshow
+			gnomeExtensions.espresso
 			desktop-file-utils
 			gnome-tweaks
 		# Obsidian & Quartz

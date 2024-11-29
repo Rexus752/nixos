@@ -271,6 +271,18 @@ with lib.hm.gvariant;
 					"steal-my-focus-window@steal-my-focus-window"
 					"azwallpaper@azwallpaper.gitlab.com"
 				];
+				disabled-extensions = [
+					"auto-move-windows@gnome-shell-extensions.gcampax.github.com"
+					"pano@elhan.io"
+					"windowsNavigator@gnome-shell-extensions.gcampax.github.com"
+					"workspace-indicator@gnome-shell-extensions.gcampax.github.com"
+					"light-style@gnome-shell-extensions.gcampax.github.com"
+					"screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com"
+					"system-monitor@gnome-shell-extensions.gcampax.github.com"
+					"window-list@gnome-shell-extensions.gcampax.github.com"
+					"native-window-placement@gnome-shell-extensions.gcampax.github.com"
+					"espresso@coadmunkee.github.com"
+				];
 			};
 			"org/gnome/shell/extensions/clipboard-history" = {
 				window-width-percentage = 33;
@@ -398,6 +410,16 @@ with lib.hm.gvariant;
 					# Secondary Menu Options
 						secondarymenu-contains-appmenu = false;  # What does this do?
 						secondarymenu-contains-showdetails = false;  # What does this do?
+			};
+			"org/gnome/shell/extensions/espresso" = {
+				show-indicator = true;
+				enable-fullscreen = true;
+				restore-state = false;
+				show-notifications = true;
+				control-nightlight = false;
+				enable-docked = false;
+				enable-charging = false;
+				allow-override = true;
 			};
 			"org/gnome/shell/extensions/notification-timeout" = {
 				ignore-idle = true;
