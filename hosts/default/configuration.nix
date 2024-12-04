@@ -1,23 +1,20 @@
 { config, lib, pkgs, inputs, ... }:
-	
+
 {
 
 	environment.systemPackages = with pkgs; [
 		audacity
-		discord
 		droidcam
 		dupeguru
 		eartag
 		file
 		firefox
-		freecad
 		htop
 		libreoffice-qt6-still
 		lollypop
 		morgen
 		mupdf
 		nicotine-plus
-		nodejs_22
 		nvd # Nix/NixOS package version diff tool
 		obs-studio
 		pinta
@@ -26,6 +23,7 @@
 		telegram-desktop
 		vlc
 		vscode-fhs
+		webcord
 		yt-dlp
 		# Programming languages
 			gcc
@@ -63,7 +61,9 @@
 			unzip
 	];
 
-	nixpkgs.config.allowUnfree = true;
+	nixpkgs.config = {
+		allowUnfree = true;
+	};
 	
 	virtualisation.docker.enable = true;
 	
