@@ -28,6 +28,7 @@
 		# Programming languages
 			gcc
 			gdb
+			gdbgui
 			gnumake
 			python3
 		# Git & GitHub
