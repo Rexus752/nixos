@@ -263,25 +263,25 @@ with lib.hm.gvariant;
 				disable-user-extensions = false;
 				enabled-extensions = [
 					"apps-menu@gnome-shell-extensions.gcampax.github.com"
+					"azwallpaper@azwallpaper.gitlab.com"
 					"clipboard-history@alexsaveau.dev"
 					"dash-to-panel@jderose9.github.com"
+					"drive-menu@gnome-shell-extensions.gcampax.github.com"
+					"espresso@coadmunkee.github.com"
 					"notification-timeout@chlumskyvaclav.gmail.com"
 					"places-menu@gnome-shell-extensions.gcampax.github.com"
-					"drive-menu@gnome-shell-extensions.gcampax.github.com"
 					"steal-my-focus-window@steal-my-focus-window"
-					"azwallpaper@azwallpaper.gitlab.com"
 				];
 				disabled-extensions = [
 					"auto-move-windows@gnome-shell-extensions.gcampax.github.com"
+					"light-style@gnome-shell-extensions.gcampax.github.com"
+					"native-window-placement@gnome-shell-extensions.gcampax.github.com"
 					"pano@elhan.io"
+					"screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com"
+					"window-list@gnome-shell-extensions.gcampax.github.com"
 					"windowsNavigator@gnome-shell-extensions.gcampax.github.com"
 					"workspace-indicator@gnome-shell-extensions.gcampax.github.com"
-					"light-style@gnome-shell-extensions.gcampax.github.com"
-					"screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com"
 					"system-monitor@gnome-shell-extensions.gcampax.github.com"
-					"window-list@gnome-shell-extensions.gcampax.github.com"
-					"native-window-placement@gnome-shell-extensions.gcampax.github.com"
-					"espresso@coadmunkee.github.com"
 				];
 			};
 			"org/gnome/shell/extensions/clipboard-history" = {
