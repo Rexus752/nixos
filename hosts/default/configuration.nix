@@ -31,6 +31,8 @@
 			gdbgui
 			gnumake
 			python3
+			R
+			rstudio
 		# Git & GitHub
 			gh
 			git
