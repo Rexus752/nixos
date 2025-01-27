@@ -252,6 +252,7 @@ with lib.hm.gvariant;
 					"firefox.desktop"
 					"org.telegram.desktop.desktop"
 					"spotify.desktop"
+					"com.github.marinm.songrec.desktop"
 					"webcord.desktop"
 					"code.desktop"
 					"obsidian.desktop"

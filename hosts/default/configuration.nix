@@ -20,6 +20,7 @@
 		obs-studio
 		pinta
 		prismlauncher
+		songrec
 		spotify
 		telegram-desktop
 		vlc
