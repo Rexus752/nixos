@@ -4,6 +4,7 @@
 
 	environment.systemPackages = with pkgs; [
 		audacity
+		cloc
 		droidcam
 		dupeguru
 		eartag
