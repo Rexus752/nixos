@@ -7,6 +7,7 @@
 		droidcam
 		dupeguru
 		eartag
+		ffmpeg
 		file
 		firefox
 		htop
