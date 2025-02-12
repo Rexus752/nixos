@@ -12,6 +12,7 @@
 		file
 		firefox
 		htop
+		jre8
 		libreoffice-qt6-still
 		lollypop
 		morgen

@@ -64,6 +64,8 @@ with lib.hm.gvariant;
 				# Restic
 					backupnow = ''restic -r rclone:gdrive:/backups backup "/home/manuel/Manuel"'';
 					snapshotslist = "restic -r rclone:gdrive:/backups snapshots";
+				# Conversions
+					flac2mp3 = ''for f in *.flac; do ffmpeg -i "$f" -q:a 2 "''${f%.flac}.mp3"; done'';
 			};
 			# For aliases with arguments, use programs.bash.bashrcExtra
 			bashrcExtra = ''
