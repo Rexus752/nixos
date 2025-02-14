@@ -58,7 +58,7 @@ with lib.hm.gvariant;
 					quartzlocal = ''cd "/home/manuel/Manuel/Obsidian/GiardinoDigitale" && npx quartz build --serve'';
 				# Nix
 					rebuild = "sudo nixos-rebuild switch --flake /home/manuel/nixos/#default && sudo systemctl restart home-manager-manuel.service";
-					editconfig = "sudo code /home/manuel/nixos";
+					editconfig = "code /home/manuel/nixos";
 					genlist = "nix profile history --profile /nix/var/nix/profiles/system";
 				# Restic
 					backupnow = ''restic -r rclone:gdrive:/backups backup "/home/manuel/Manuel"'';
