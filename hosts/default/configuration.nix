@@ -23,6 +23,9 @@
 		songrec
 		spotify
 		telegram-desktop
+		thunderbird
+		tonelib-zoom
+		ventoy
 		vlc
 		vscode-fhs
 		webcord
