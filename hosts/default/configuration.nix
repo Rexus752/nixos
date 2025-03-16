@@ -12,7 +12,6 @@
 		file
 		firefox
 		htop
-		jre8
 		libreoffice-qt6-still
 		lollypop
 		mupdf
@@ -33,9 +32,12 @@
 			gdb
 			gdbgui
 			gnumake
+            jdk
+            jre8
 			python3
 			R
 			rstudio
+            ruby
 		# Git & GitHub
 			gh
 			git
