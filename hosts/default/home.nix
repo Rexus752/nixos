@@ -68,7 +68,7 @@ with lib.hm.gvariant;
 			};
 			# For aliases with arguments, use programs.bash.bashrcExtra
 			bashrcExtra = ''
-				ytdl() { yt-dlp -x "$1" --audio-format mp3 -P "/home/manuel/Downloads" --embed-metadata --add-metadata --embed-thumbnail; }
+				ytdl() { yt-dlp --extract-audio "$1" --audio-format mp3 --paths "/home/manuel/Downloads" --embed-metadata --add-metadata --embed-thumbnail; }
 				restore() { restic -r rclone:gdrive:/backups restore latest --target Manuel/restored --include "$1" && echo "Restored file in ~/Manuel/restored"; }
 			'';
 		};
