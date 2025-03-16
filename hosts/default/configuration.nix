@@ -15,7 +15,6 @@
 		jre8
 		libreoffice-qt6-still
 		lollypop
-		morgen
 		mupdf
 		nicotine-plus
 		nvd # Nix/NixOS package version diff tool
