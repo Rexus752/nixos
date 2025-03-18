@@ -5,7 +5,6 @@
 	environment.systemPackages = with pkgs; [
 		audacity
         autokey
-        chromium
 		cloc
         drawio
 		droidcam
@@ -27,6 +26,7 @@
 		telegram-desktop
 		thunderbird
 		tonelib-zoom
+        ungoogled-chromium
 		ventoy
 		vlc
 		vscode-fhs
