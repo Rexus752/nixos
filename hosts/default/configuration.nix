@@ -4,13 +4,14 @@
 
 	environment.systemPackages = with pkgs; [
 		audacity
+        autokey
+        chromium
 		cloc
 		droidcam
 		dupeguru
 		eartag
 		ffmpeg
 		file
-		firefox
 		htop
 		libreoffice-qt6-still
 		lollypop
@@ -175,14 +176,14 @@
 			/* .gp */ "application/x-gnuplot" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];
 			/* .gp5 */ "application/x-wine-extension-gp5" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];
 			/* .mp3 */ "audio/mpeg" = ["org.gnome.Lollypop.desktop"];
-			/* .pdf */ "application/pdf" = ["firefox.desktop"];
+			/* .pdf */ "application/pdf" = ["chromium-browser.desktop"];
 		};
 		defaultApplications = {
 			/* .code-workspace */ "application/json" = ["code.desktop"];
 			/* .gp */ "application/x-gnuplot" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];
 			/* .gp5 */ "application/x-wine-extension-gp5" = ["wine-Programs-Arobas Music-Guitar Pro 8-Guitar Pro 8.desktop"];
 			/* .mp3 */ "audio/mpeg" = ["org.gnome.Lollypop.desktop"];
-			/* .pdf */ "application/pdf" = ["firefox.desktop"];
+			/* .pdf */ "application/pdf" = ["chromium-browser.desktop"];
 		};
 	};
 

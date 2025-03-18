@@ -249,7 +249,7 @@ with lib.hm.gvariant;
 					"org.gnome.Nautilus.desktop"
 					"org.gnome.TextEditor.desktop"
 					"org.gnome.Calculator.desktop"
-					"firefox.desktop"
+					"chromium-browser.desktop"
 					"org.telegram.desktop.desktop"
 					"spotify.desktop"
 					"com.github.marinm.songrec.desktop"
