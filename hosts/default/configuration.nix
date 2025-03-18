@@ -7,6 +7,7 @@
         autokey
         chromium
 		cloc
+        drawio
 		droidcam
 		dupeguru
 		eartag
