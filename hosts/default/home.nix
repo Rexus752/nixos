@@ -75,7 +75,7 @@ with lib.hm.gvariant;
 		git = {
 			enable = true;
 			userName = "Rexus752";
-			userEmail = "t.rexus752@gmail.com";
+			userEmail = "manuel.venezia.752@gmail.com";
 		};
 	};
 
