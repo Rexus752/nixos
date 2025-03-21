@@ -43,6 +43,7 @@
 			R
 			rstudio
             ruby
+            supercollider
 		# Git & GitHub
 			gh
 			git
