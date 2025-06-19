@@ -6,6 +6,7 @@
 		audacity
         autokey
 		cloc
+        discord
         drawio
 		droidcam
 		dupeguru
@@ -31,7 +32,6 @@
 		ventoy
 		vlc
 		vscode-fhs
-		webcord
 		yt-dlp
 		# Programming languages
 			gcc
