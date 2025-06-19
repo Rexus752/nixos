@@ -21,6 +21,7 @@
 		obs-studio
 		pinta
 		prismlauncher
+        putty
 		songrec
 		spotify
 		telegram-desktop
